@@ -14,7 +14,7 @@ def BFA(source):
     for vertex in graph.keys():
         distances[vertex] = 0
 
-    OPEN = []    # <-- QUEUE (FIFO) <--
+    OPEN = []  # <-- QUEUE (FIFO) <--
     CLOSED = []  # LIST <--
 
     OPEN.append(source)
@@ -30,6 +30,12 @@ def BFA(source):
     return distances
 
 
-graph = create_graph(A=['B', 'C'], B=['D', 'E'], C=['F'], D=[
-                     'H'], E=[], F=['G'], G=['H'], H=[])
+graph = create_graph(A=['B', 'C'],
+                     B=['D', 'E'],
+                     C=['F'],
+                     D=['H'],
+                     E=[],
+                     F=['G'],
+                     G=['H'],
+                     H=[])
 print(BFA('A'))
