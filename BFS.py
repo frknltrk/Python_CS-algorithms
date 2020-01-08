@@ -14,7 +14,7 @@ def BFA(source):
     for vertex in graph.keys():
         distances[vertex] = 0
 
-    OPEN = []  # <-- QUEUE (FIFO) <--
+    OPEN = []    # <-- QUEUE (FIFO) <--
     CLOSED = []  # LIST <--
 
     OPEN.append(source)
