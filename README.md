@@ -1,5 +1,5 @@
 # Python_CS-algorithms
 python implementations of some algorithms
 
-* BFA (Breadth-First Search)
-* DFA (Depth-First Search)
+* BFS (Breadth-First Search)
+* DFS (Depth-First Search)
