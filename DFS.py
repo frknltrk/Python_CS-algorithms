@@ -24,7 +24,7 @@ def BFA(source):
         CLOSED.append(x)
         for adjacent in reversed(adjacents(x)):
             # if the vertex (adjacent) is "brand-new"
-            if (adjacent not in OPEN) and (adjacent not in CLOSED):
+            if not((adjacent in OPEN) or (adjacent in CLOSED)):
                 OPEN.insert(0, adjacent)
                 distances[adjacent] = distances[x] + 1
     return distances
